@@ -39,9 +39,9 @@
 #### 总结计算公式
 
 根据防御力和抵抗力的增长特点，可以将各面板能力与属性值的关系通过一个通式和函数表来表示。
-$$
-y_j=\sum_1^9f_{ij}(x_i)
-$$
+
+![1](https://latex.codecogs.com/svg.latex?y_j=\sum_{1}^{9}f_{ij}(x_{i}))
+
 式中x<sub>i</sub>表示各属性值，y<sub>j</sub>表示各面板能力，具体如下表所示，f<sub>ij</sub>根据下表对应查得。
 
 <h3 align = "center">防御力与抵抗力计算函数表</h3>
@@ -183,7 +183,7 @@ $$
 
 11级以后用4次函数拟合后基本所有点都落在拟合的4次函数上，函数通式为：
 
-![1](http://latex.codecogs.com/gif.latex?\begin{cases}0.12*level^2+16*level+657.4\\\\-1e^{-12}*level^4+0.02*level^3+3.12*level^2+111.78*level-786.2\\\\\end{cases})
+![2](http://latex.codecogs.com/gif.latex?\begin{cases}0.12*level^2+16*level+657.4\\\\-1e^{-12}*level^4+0.02*level^3+3.12*level^2+111.78*level-786.2\\\\\end{cases})
 
 等级:1~10
 
