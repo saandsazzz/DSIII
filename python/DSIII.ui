@@ -1,0 +1,1680 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1001</width>
+    <height>870</height>
+   </rect>
+  </property>
+  <property name="font">
+   <font>
+    <family>Cambria</family>
+    <pointsize>12</pointsize>
+   </font>
+  </property>
+  <property name="focusPolicy">
+   <enum>Qt::ClickFocus</enum>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="label_birth">
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>90</y>
+      <width>40</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>birth</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_level">
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>130</y>
+      <width>40</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>level</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_soulsToNext">
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>170</y>
+      <width>130</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Souls to next level</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_soulsSpendSum">
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>210</y>
+      <width>130</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Souls spend sum</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_Attribute">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>340</y>
+      <width>70</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Cambria</family>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color:red;</string>
+    </property>
+    <property name="text">
+     <string>Attribute</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_vigor">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>388</y>
+      <width>100</width>
+      <height>33</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Vigor</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_attunement">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>428</y>
+      <width>100</width>
+      <height>33</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Attunement</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_endurance">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>468</y>
+      <width>100</width>
+      <height>33</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Endurance</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_vitality">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>508</y>
+      <width>100</width>
+      <height>33</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Vitality</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_strength">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>548</y>
+      <width>100</width>
+      <height>33</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Strength</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_dexterity">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>588</y>
+      <width>100</width>
+      <height>33</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Dexterity</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_intelligence">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>628</y>
+      <width>100</width>
+      <height>33</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Intelligence</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_faith">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>668</y>
+      <width>100</width>
+      <height>33</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Faith</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_luck">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>708</y>
+      <width>100</width>
+      <height>33</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Luck</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="text_Level">
+    <property name="geometry">
+     <rect>
+      <x>250</x>
+      <y>130</y>
+      <width>100</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Box</enum>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="text_soulsToNext">
+    <property name="geometry">
+     <rect>
+      <x>250</x>
+      <y>170</y>
+      <width>100</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Box</enum>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="text_soulsSpendSum">
+    <property name="geometry">
+     <rect>
+      <x>250</x>
+      <y>210</y>
+      <width>100</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Box</enum>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_Init">
+    <property name="geometry">
+     <rect>
+      <x>270</x>
+      <y>340</y>
+      <width>30</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Cambria</family>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color:red;</string>
+    </property>
+    <property name="text">
+     <string>Init</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_Current">
+    <property name="geometry">
+     <rect>
+      <x>360</x>
+      <y>340</y>
+      <width>60</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Cambria</family>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color:red;</string>
+    </property>
+    <property name="text">
+     <string>Current</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="init_vigor">
+    <property name="geometry">
+     <rect>
+      <x>270</x>
+      <y>388</y>
+      <width>30</width>
+      <height>33</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="init_attunement">
+    <property name="geometry">
+     <rect>
+      <x>270</x>
+      <y>428</y>
+      <width>30</width>
+      <height>33</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="init_endurance">
+    <property name="geometry">
+     <rect>
+      <x>270</x>
+      <y>468</y>
+      <width>30</width>
+      <height>33</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="init_vitality">
+    <property name="geometry">
+     <rect>
+      <x>270</x>
+      <y>508</y>
+      <width>30</width>
+      <height>33</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="init_strength">
+    <property name="geometry">
+     <rect>
+      <x>270</x>
+      <y>548</y>
+      <width>30</width>
+      <height>33</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="init_dexterity">
+    <property name="geometry">
+     <rect>
+      <x>270</x>
+      <y>588</y>
+      <width>30</width>
+      <height>33</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="init_intelligence">
+    <property name="geometry">
+     <rect>
+      <x>270</x>
+      <y>628</y>
+      <width>30</width>
+      <height>33</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="init_faith">
+    <property name="geometry">
+     <rect>
+      <x>270</x>
+      <y>668</y>
+      <width>30</width>
+      <height>33</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="init_luck">
+    <property name="geometry">
+     <rect>
+      <x>270</x>
+      <y>708</y>
+      <width>30</width>
+      <height>33</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="vigor_sub_button">
+    <property name="geometry">
+     <rect>
+      <x>330</x>
+      <y>388</y>
+      <width>20</width>
+      <height>36</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Consolas</family>
+      <pointsize>16</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">text-align:up;</string>
+    </property>
+    <property name="text">
+     <string>-</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="vigor_add_button">
+    <property name="geometry">
+     <rect>
+      <x>430</x>
+      <y>388</y>
+      <width>20</width>
+      <height>36</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Consolas</family>
+      <pointsize>16</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>+</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="vigor_text">
+    <property name="geometry">
+     <rect>
+      <x>360</x>
+      <y>390</y>
+      <width>60</width>
+      <height>33</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="attunement_sub_button">
+    <property name="geometry">
+     <rect>
+      <x>330</x>
+      <y>428</y>
+      <width>20</width>
+      <height>36</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Consolas</family>
+      <pointsize>16</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">text-align:up;</string>
+    </property>
+    <property name="text">
+     <string>-</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="endurance_sub_button">
+    <property name="geometry">
+     <rect>
+      <x>330</x>
+      <y>468</y>
+      <width>20</width>
+      <height>36</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Consolas</family>
+      <pointsize>16</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">text-align:up;</string>
+    </property>
+    <property name="text">
+     <string>-</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="vitality_sub_button">
+    <property name="geometry">
+     <rect>
+      <x>330</x>
+      <y>508</y>
+      <width>20</width>
+      <height>36</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Consolas</family>
+      <pointsize>16</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">text-align:up;</string>
+    </property>
+    <property name="text">
+     <string>-</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="strength_sub_button">
+    <property name="geometry">
+     <rect>
+      <x>330</x>
+      <y>548</y>
+      <width>20</width>
+      <height>36</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Consolas</family>
+      <pointsize>16</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">text-align:up;</string>
+    </property>
+    <property name="text">
+     <string>-</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="dexterity_sub_button">
+    <property name="geometry">
+     <rect>
+      <x>330</x>
+      <y>588</y>
+      <width>20</width>
+      <height>36</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Consolas</family>
+      <pointsize>16</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">text-align:up;</string>
+    </property>
+    <property name="text">
+     <string>-</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="intelligence_sub_button">
+    <property name="geometry">
+     <rect>
+      <x>330</x>
+      <y>628</y>
+      <width>20</width>
+      <height>36</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Consolas</family>
+      <pointsize>16</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">text-align:up;</string>
+    </property>
+    <property name="text">
+     <string>-</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="faith_sub_button">
+    <property name="geometry">
+     <rect>
+      <x>330</x>
+      <y>668</y>
+      <width>20</width>
+      <height>36</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Consolas</family>
+      <pointsize>16</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">text-align:up;</string>
+    </property>
+    <property name="text">
+     <string>-</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="luck_sub_button">
+    <property name="geometry">
+     <rect>
+      <x>330</x>
+      <y>708</y>
+      <width>20</width>
+      <height>36</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Consolas</family>
+      <pointsize>16</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">text-align:up;</string>
+    </property>
+    <property name="text">
+     <string>-</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="attunement_add_button">
+    <property name="geometry">
+     <rect>
+      <x>430</x>
+      <y>428</y>
+      <width>20</width>
+      <height>36</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Consolas</family>
+      <pointsize>16</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>+</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="endurance_add_button">
+    <property name="geometry">
+     <rect>
+      <x>430</x>
+      <y>468</y>
+      <width>20</width>
+      <height>36</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Consolas</family>
+      <pointsize>16</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>+</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="vitality_add_button">
+    <property name="geometry">
+     <rect>
+      <x>430</x>
+      <y>508</y>
+      <width>20</width>
+      <height>36</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Consolas</family>
+      <pointsize>16</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>+</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="strength_add_button">
+    <property name="geometry">
+     <rect>
+      <x>430</x>
+      <y>548</y>
+      <width>20</width>
+      <height>36</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Consolas</family>
+      <pointsize>16</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>+</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="dexterity_add_button">
+    <property name="geometry">
+     <rect>
+      <x>430</x>
+      <y>588</y>
+      <width>20</width>
+      <height>36</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Consolas</family>
+      <pointsize>16</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>+</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="intelligence_add_button">
+    <property name="geometry">
+     <rect>
+      <x>430</x>
+      <y>628</y>
+      <width>20</width>
+      <height>36</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Consolas</family>
+      <pointsize>16</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>+</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="faith_add_button">
+    <property name="geometry">
+     <rect>
+      <x>430</x>
+      <y>668</y>
+      <width>20</width>
+      <height>36</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Consolas</family>
+      <pointsize>16</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>+</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="luck_add_button">
+    <property name="geometry">
+     <rect>
+      <x>430</x>
+      <y>708</y>
+      <width>20</width>
+      <height>36</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Consolas</family>
+      <pointsize>16</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>+</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="attunement_text">
+    <property name="geometry">
+     <rect>
+      <x>360</x>
+      <y>430</y>
+      <width>60</width>
+      <height>33</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="endurance_text">
+    <property name="geometry">
+     <rect>
+      <x>360</x>
+      <y>470</y>
+      <width>60</width>
+      <height>33</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="vitality_text">
+    <property name="geometry">
+     <rect>
+      <x>360</x>
+      <y>510</y>
+      <width>60</width>
+      <height>33</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="strength_text">
+    <property name="geometry">
+     <rect>
+      <x>360</x>
+      <y>550</y>
+      <width>60</width>
+      <height>33</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="dexterity_text">
+    <property name="geometry">
+     <rect>
+      <x>360</x>
+      <y>590</y>
+      <width>60</width>
+      <height>33</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="intelligence_text">
+    <property name="geometry">
+     <rect>
+      <x>360</x>
+      <y>630</y>
+      <width>60</width>
+      <height>33</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="faith_text">
+    <property name="geometry">
+     <rect>
+      <x>360</x>
+      <y>670</y>
+      <width>60</width>
+      <height>33</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="luck_text">
+    <property name="geometry">
+     <rect>
+      <x>360</x>
+      <y>710</y>
+      <width>60</width>
+      <height>33</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="comboBox">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>90</y>
+      <width>100</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Cambria</family>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <item>
+     <property name="text">
+      <string>Knight</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Mercenary</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Warrior</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Herald</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Thief</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Assassin</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Sorcerer</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Pyromancer</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Cleric</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Deprived</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QLabel" name="label_HP">
+    <property name="geometry">
+     <rect>
+      <x>400</x>
+      <y>90</y>
+      <width>60</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>HP</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_FP">
+    <property name="geometry">
+     <rect>
+      <x>400</x>
+      <y>130</y>
+      <width>60</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>FP</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_Stamina">
+    <property name="geometry">
+     <rect>
+      <x>400</x>
+      <y>170</y>
+      <width>60</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Stamina</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_Equipment_Load">
+    <property name="geometry">
+     <rect>
+      <x>640</x>
+      <y>90</y>
+      <width>120</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Equipment Load</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_Poise">
+    <property name="geometry">
+     <rect>
+      <x>400</x>
+      <y>210</y>
+      <width>60</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Poise</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_Item_Discovery">
+    <property name="geometry">
+     <rect>
+      <x>640</x>
+      <y>130</y>
+      <width>120</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Item Discovery</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_Attunement_Slots">
+    <property name="geometry">
+     <rect>
+      <x>640</x>
+      <y>170</y>
+      <width>120</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Attunement Slots</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_Physical">
+    <property name="geometry">
+     <rect>
+      <x>600</x>
+      <y>278</y>
+      <width>70</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Physical</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_Strike">
+    <property name="geometry">
+     <rect>
+      <x>615</x>
+      <y>318</y>
+      <width>70</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>VS Strike</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_Slash">
+    <property name="geometry">
+     <rect>
+      <x>615</x>
+      <y>358</y>
+      <width>70</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>VS Slash</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_Thrust">
+    <property name="geometry">
+     <rect>
+      <x>615</x>
+      <y>398</y>
+      <width>70</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>VS Thrust</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_Magic">
+    <property name="geometry">
+     <rect>
+      <x>600</x>
+      <y>438</y>
+      <width>70</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Magic</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_Lightning">
+    <property name="geometry">
+     <rect>
+      <x>600</x>
+      <y>518</y>
+      <width>70</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Lightning</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_Fire">
+    <property name="geometry">
+     <rect>
+      <x>600</x>
+      <y>478</y>
+      <width>70</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Fire</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_Dark">
+    <property name="geometry">
+     <rect>
+      <x>600</x>
+      <y>558</y>
+      <width>70</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Dark</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_Defence">
+    <property name="geometry">
+     <rect>
+      <x>760</x>
+      <y>238</y>
+      <width>100</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Cambria</family>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color:red;</string>
+    </property>
+    <property name="text">
+     <string>Defence</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_Bleed">
+    <property name="geometry">
+     <rect>
+      <x>600</x>
+      <y>658</y>
+      <width>70</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Bleed</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_Poison">
+    <property name="geometry">
+     <rect>
+      <x>600</x>
+      <y>698</y>
+      <width>70</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Poison</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_Frost">
+    <property name="geometry">
+     <rect>
+      <x>600</x>
+      <y>738</y>
+      <width>70</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Frost</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_Curse">
+    <property name="geometry">
+     <rect>
+      <x>600</x>
+      <y>778</y>
+      <width>70</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Curse</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_Resistances">
+    <property name="geometry">
+     <rect>
+      <x>760</x>
+      <y>618</y>
+      <width>100</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Cambria</family>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color:red;</string>
+    </property>
+    <property name="text">
+     <string>Resistances</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="text_FP">
+    <property name="geometry">
+     <rect>
+      <x>490</x>
+      <y>130</y>
+      <width>100</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Box</enum>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="text_Stamina">
+    <property name="geometry">
+     <rect>
+      <x>490</x>
+      <y>170</y>
+      <width>100</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Box</enum>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="text_Poise">
+    <property name="geometry">
+     <rect>
+      <x>490</x>
+      <y>210</y>
+      <width>100</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Box</enum>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="text_Equipment_Load">
+    <property name="geometry">
+     <rect>
+      <x>790</x>
+      <y>90</y>
+      <width>100</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Box</enum>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="text_Attunement_Slots">
+    <property name="geometry">
+     <rect>
+      <x>790</x>
+      <y>170</y>
+      <width>100</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Box</enum>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="text_HP">
+    <property name="geometry">
+     <rect>
+      <x>490</x>
+      <y>90</y>
+      <width>100</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Box</enum>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="text_Item_Discovery">
+    <property name="geometry">
+     <rect>
+      <x>790</x>
+      <y>130</y>
+      <width>100</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Box</enum>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="text_Physical">
+    <property name="geometry">
+     <rect>
+      <x>760</x>
+      <y>280</y>
+      <width>100</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Box</enum>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="text_Strike">
+    <property name="geometry">
+     <rect>
+      <x>760</x>
+      <y>320</y>
+      <width>100</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Box</enum>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="text_Slash">
+    <property name="geometry">
+     <rect>
+      <x>760</x>
+      <y>360</y>
+      <width>100</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Box</enum>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="text_Thrust">
+    <property name="geometry">
+     <rect>
+      <x>760</x>
+      <y>400</y>
+      <width>100</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Box</enum>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="text_Magic">
+    <property name="geometry">
+     <rect>
+      <x>760</x>
+      <y>440</y>
+      <width>100</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Box</enum>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="text_Fire">
+    <property name="geometry">
+     <rect>
+      <x>760</x>
+      <y>480</y>
+      <width>100</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Box</enum>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="text_Lightning">
+    <property name="geometry">
+     <rect>
+      <x>760</x>
+      <y>520</y>
+      <width>100</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Box</enum>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="text_Dark">
+    <property name="geometry">
+     <rect>
+      <x>760</x>
+      <y>560</y>
+      <width>100</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Box</enum>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="text_Bleed">
+    <property name="geometry">
+     <rect>
+      <x>760</x>
+      <y>660</y>
+      <width>100</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Box</enum>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="text_Poison">
+    <property name="geometry">
+     <rect>
+      <x>760</x>
+      <y>700</y>
+      <width>100</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Box</enum>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="text_Frost">
+    <property name="geometry">
+     <rect>
+      <x>760</x>
+      <y>740</y>
+      <width>100</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Box</enum>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="text_Curse">
+    <property name="geometry">
+     <rect>
+      <x>760</x>
+      <y>780</y>
+      <width>100</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Box</enum>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
